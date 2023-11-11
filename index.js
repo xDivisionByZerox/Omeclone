@@ -1,5 +1,6 @@
 'use strict';
 
+const expressVue = require("express-vue");
 const express = require('express');
 const faker = require('faker');
 const app = express();
@@ -11,7 +12,7 @@ require('./globals.js');
 
 
 
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 

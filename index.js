@@ -4,9 +4,9 @@ const express = require('express');
 const faker = require('faker');
 const app = express();
 const server = require('http').Server(app);
-const io = require('socket.io')(server);
+// const io = require('socket.io')(server);
 const port = process.env.PORT || 3000;
-// require('./socketserver.js')(io, app);
+//require('./socketserver.js')(io, app);
 require('./globals.js');
 
 app.set('view engine', 'ejs');

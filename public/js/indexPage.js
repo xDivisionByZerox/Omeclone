@@ -8,9 +8,14 @@ checkBox.addEventListener('click', () => {
     if (checkBox.checked == false) {
         play.classList.add('disabled');
     }
-})
+});
+
 play.addEventListener('click', () => {
     if (!play.classList.contains('disabled')) {
         window.open('/chat', '_self');
     }
-})
+});
+
+function YearNow() {
+    return new Date().getFullYear()
+}

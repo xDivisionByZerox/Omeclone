@@ -3,7 +3,6 @@
     "name": "Omeclone",
     "script"    : "./index.js",
     "instances" : "max",
-    "exec_mode" : "cluster",
-    "watch": true
+    "exec_mode" : "cluster"
   }]
 }

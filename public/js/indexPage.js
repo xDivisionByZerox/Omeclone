@@ -15,7 +15,3 @@ play.addEventListener('click', () => {
         window.open('/chat', '_self');
     }
 });
-
-function YearNow() {
-    return new Date().getFullYear()
-}

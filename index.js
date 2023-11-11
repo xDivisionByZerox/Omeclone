@@ -1,6 +1,5 @@
 'use strict';
 
-const expressVue = require("express-vue");
 const express = require('express');
 const faker = require('faker');
 const app = express();

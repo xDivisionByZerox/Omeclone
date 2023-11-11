@@ -13,11 +13,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
-io.on("connection", (socket)=>{
-  //socket is the socket object of the new client
-  console.log("new socket connected with socket id = " + socket.id);
-});
-
 app.get('/', (req, res) => {
   let noOfUsers = onlineUsers.length;
   if (noOfUsers > 1) {

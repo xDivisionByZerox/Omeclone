@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  const socketURL = `${window.location.hostname}:${window.location.port}`;
+  const socketURL = `${window.location.hostname}`;
   let socket = io.connect(socketURL);
   let room_id_of_other_user = ' ';
   let autolinker = new Autolinker({ newWindow: false, stripPrefix: false });

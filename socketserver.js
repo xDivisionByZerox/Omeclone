@@ -7,6 +7,7 @@ const moment = require('moment');
 // This is our socket server. All the events socket events will go here.
 // Export the socket server
 require('./globals.js');
+
 module.exports = (io, app) => {
   io.on('connection', (socket) => {
     let windowID = socket;

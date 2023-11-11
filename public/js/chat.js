@@ -1,9 +1,12 @@
 'use strict';
 
 (function () {
-  let socket = io.connect(`${window.location.hostname}:${window.location.port}`);
+  const socketURL = `${window.location.hostname}:${window.location.port}`;
+  let socket = io.connect(socketURL);
   let room_id_of_other_user = ' ';
   let autolinker = new Autolinker({ newWindow: false, stripPrefix: false });
+
+  console.info(`Connected to ${socketURL}`)
 
   socket.on('ack', (d) => {
     socket.emit('privateRoom', {

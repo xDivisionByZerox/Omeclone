@@ -16,4 +16,4 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         key: ${{ secrets.SSH_KEY }}
         script: 
-          cd /var/www/ && ./server_deploy.sh
+          cd /var/www/Omeclone && ./server_deploy.sh

@@ -11,126 +11,85 @@
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>Homepage: Omeclone</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">§
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    {{!--
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css"> --}}
+    <link rel="stylesheet" type="text/css" href="/css/index_style.css">
+    <title>Xenos Omegle</title>
 </head>
 
 <body>
-    <div class="ui menu">
-        <div class="item left floated">
-            <div class="ui header">
-                <h1 class="sty">OMECLONE</h1>
-            </div>
-        </div>
-        <div class="item right floated">
-            <h2 class="sty user_text">{{ noOfUsers }} online</h2>
-        </div>
-    </div>
-    <div class="ui grid divided">
-        <div class="eight wide computer eight wide tablet sixteen wide mobile column center aligned top_clear">
-            <p class="sty add">Omeclone lets you connect with a stranger at random for a one on one chat. Your chats are
-                end to end encrypted and hence you can put forward your ideas freely. Talk to strangers and have fun.
-            </p>
-            <p class="sty add">For any feedback, you can click
-                <a href="https://github.com/wdlsvnit/omeclone/issues" target="_blank" class="link">here</a> and submit
-                the issue encountered. We promise to get back to you soon.
-            </p>
-        </div>
-        <div class="eight wide computer eight wide tablet sixteen wide mobile column center aligned">
-            <div class="ui segment">
-                <div class="ui relaxed divided list">
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">
-                                <i class="hand point up icon"></i>
-                            </div>
-                            <div class="description">Click on the “CHAT WITH STRANGER” button on your device screen.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">
-                                <i class="comments icon"></i>
-                            </div>
-                            <div class="description">
-                                You are taken to the chat page where the app connects you to a stranger at random.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">
-                                <i class="window close icon"></i>
-                            </div>
-                            <div class="description">
-                                To end the chat click on the end chat button. You will be alerted by a modal for your
-                                affirmation.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="header">
-                                <i class="redo icon"></i>
-                            </div>
-                            <div class="description">
-                                To find a new partner click on the new button and relive the experience once more.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr class="hr">
-    <div class="ui hidden divider"></div>
-    <div class="ui grid">
-        <div class="row">
-            <div class="five wide computer five wide tablet three wide mobile column"></div>
-            <div class="six wide computer six wide tablet ten wide mobile column center aligned">
-                <div class="ui hidden divider"></div>
-                <div class="input">
-                    <input type="checkbox" id="squaredOne">
-                    <span class="agree_text">I agree to all the
-                        <a href="https://docs.google.com/document/d/18MKqMDOKq3737K9aKYOXEZWYU9ZCy_3RPMWEhkM8yD8"
-                            class="terms">Terms and Conditions</a>
-                    </span>
-                </div>
-                <div class="ui hidden divider"></div>
-                <div class="ui button animated fade massive blue inverted disabled" id="termsAndCo">
-                    <div class="visible content">
-                        <span class="sty">Chat with Stranger</span>
-                    </div>
-                    <div class="hidden content">
-                        <span class="sty">TAKE ME THERE</span>
-                    </div>
-                </div>
-            </div>
-            <div class="five wide computer five wide tablet three wide mobile column"></div>
-        </div>
-    </div>
+    <header class="hide">
+        <nav>
+            <img src="/img/logo.png" alt="Travelo" class="logo">
+            <ul>
+                <li>
+                    {{ noOfUsers }} online
+                </li>
+                <li class="hamburger">
 
-    <div class="ui hidden divider"></div>
-    <div class="ui hidden divider"></div>
-    <div class="ui hidden divider"></div>
+                    <div class="bar"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="vignette hide"></div>
+        <img src="/img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0"
+            data-distance="-200" class="parallax bg-img">
+        <img src="/img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0"
+            data-distance="850" class="parallax fog-7">
+        <img src="/img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0"
+            data-distance="1100" class="parallax mountain-10">
+        <img src="/img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" data-rotation="0"
+            data-distance="1400" class="parallax fog-6">
+        <img src="/img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02"
+            data-distance="1700" class="parallax mountain-9">
+        <img src="/img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0.02"
+            data-distance="1800" class="parallax mountain-8">
+        <img src="/img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0" data-rotation="0"
+            data-distance="1900" class="parallax fog-5">
+        <img src="/img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09"
+            data-distance="2000" class="parallax mountain-7">
+        <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0" data-rotation="0.11">
+            <h2>Xenos</h2>
+            <h1>Omegle</h1>
+        </div>
+        <img src="/img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.12"
+            data-distance="2300" class="parallax mountain-6">
+        <img src="/img/fog_4.png" data-speedx="0.135" data-speedy="0.04" data-speedz="0" data-rotation="0"
+            data-distance="2400" class="parallax fog-4">
+        <img src="/img/mountain_5.png" data-speedx="0.08" data-speedy="0.03" data-speedz="0.13" data-rotation="0.1"
+            data-distance="2550" class="parallax mountain-5">
+        <img src="/img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-rotation="0"
+            data-distance="2800" class="parallax fog-3">
+        <img src="/img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0.35" data-rotation="0.14"
+            data-distance="3200" class="parallax mountain-4">
+        <img src="/img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05"
+            data-distance="3400" class="parallax mountain-3">
+        <img src="/img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0"
+            data-distance="3600" class="parallax fog-2">
+        <img src="/img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15"
+            data-distance="3800" class="parallax mountain-2">
+        <img src="/img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2"
+            data-distance="4000" class="parallax mountain-1">
+        <img src="/img/sun_rays.png" class="sun-rays hide">
+        <img src="/img/black_shadow.png" class="black-shadow hide">
+        <img src="/img/fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0"
+            data-distance="4200" class="parallax fog-1">
+    </main>
 
 
-    <div class="sixteen wide column" id="footer">
-        <div class="ui secondary segment">
-            <div class="wrapper">
-                <div class="item">
-                    <a href="https://omegle.sk" class="ui link">&copy; Okeyko <%= new Date().getFullYear() %></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/app.js" defer></script>
+    <script src="/js/indexPage.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.min.js"></script>
 </body>
-<script src="/js/indexPage.js"></script>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/semantic/dist/semantic.min.js"></script>
+
+
 
 </html>

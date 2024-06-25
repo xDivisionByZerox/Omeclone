@@ -348,8 +348,13 @@ body {
 #newbtn,
 #cancel {
   background-color: var(--fialova-1) !important;
+  margin-left: 5px !important;
 }
 
 .ui.grid {
   margin: 0 !important;
+}
+
+.ui.button {
+  border-radius: .28571429rem !important;
 }

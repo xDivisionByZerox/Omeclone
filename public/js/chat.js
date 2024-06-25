@@ -109,6 +109,9 @@
       "typingStatus": false
     });
     message.value = '';
+
+    // cursor focus on message input
+    message.focus();
   });
 
   socket.on('private ack', (data) => {

@@ -260,24 +260,16 @@
 }
 
 .gradient {
-  --size: 400px !important;
   --speed: 5s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  width: var(--size);
-  height: var(--size);
-  filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(
-    var(--modra-1),
-    var(--modra-2),
-    var(--fialova-1),
-    var(--fialova-2),
-    var(--cervena-1),
-    var(--cervena-2)
-  );
+  width: 30% !important;
+  height: 30% !important;
+  filter: blur(calc(400px / 5));
+  background-image: linear-gradient(    var(--modra-1),    var(--modra-2),    var(--fialova-1),    var(--fialova-2),    var(--cervena-1),    var(--cervena-2)  );
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   z-index: -999;
-  position: absolute;
+  position:fixed;
   align-items: center;
   justify-content: center;
   overflow: hidden !important;
@@ -285,6 +277,7 @@
   -moz-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   -ms-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   -o-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -webkit-filter: blur(calc(400px / 5));
 }
 
 @media (min-width: 720px) {

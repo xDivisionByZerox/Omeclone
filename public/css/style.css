@@ -295,7 +295,6 @@ body {
   display: flex;
   place-content: center;
   align-items: center;
-  overflow: hidden !important;
   color: var(--bila) !important;
 }
 

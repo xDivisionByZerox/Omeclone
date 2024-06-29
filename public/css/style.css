@@ -32,6 +32,7 @@
 .msg {
   margin-bottom: 2.5px;
   margin-top: 2.5px;
+  
 }
 
 .agree {
@@ -64,6 +65,8 @@
 }
 
 #msgs {
+  max-height: 75vh;
+  overflow-y: auto;
   margin: 40px 0px;
 }
 
@@ -151,20 +154,32 @@
 }
 
 .times_css {
-  /*  Time is hidden out temporarily*/
-  display: none;
+  display: none !important;
   position: absolute;
   right: 5px;
   font-size: 0.7em;
-  bottom: 5px;
+  bottom: 0px !important;
   color: var(--bila);
 }
 
 .msg_div {
-  border-radius: 25px;
+  border-radius: 5px;
   word-wrap: break-word;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ui.grid>.blue.column, .ui.grid>.blue.row, .ui.grid>.row>.blue.column
+{
+  background-color: #080120 !important;
+}
+
+.ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+  width: fit-content !important;
 }
 
 #squareOne {
@@ -286,8 +301,17 @@
   }
 }
 
+.ui.menu {
+  margin: 0 !important;
+}
+
+.toast-info {
+  background-color: #780BFF !important;
+  color: var(--bila) !important;
+}
+
 body {
-  background-color: #222;
+  background-color: #000;
   position: absolute;
   inset: 0;
   display: flex;

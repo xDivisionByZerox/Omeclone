@@ -32,7 +32,7 @@
 .msg {
   margin-bottom: 2.5px;
   margin-top: 2.5px;
-  
+  height: fit-content;
 }
 
 .agree {
@@ -65,9 +65,10 @@
 }
 
 #msgs {
-  max-height: 75vh;
+  height: calc(100vh - 150px);
   overflow-y: auto;
-  margin: 40px 0px;
+  display: flex;
+  align-content: end;
 }
 
 #endbtn {
@@ -173,12 +174,16 @@
   -o-border-radius: 5px;
 }
 
-.ui.grid>.blue.column, .ui.grid>.blue.row, .ui.grid>.row>.blue.column
-{
+.ui.grid > .blue.column,
+.ui.grid > .blue.row,
+.ui.grid > .row > .blue.column {
   background-color: #080120 !important;
 }
 
-.ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+.ui.column.grid > [class*="seven wide"].column,
+.ui.grid > .column.row > [class*="seven wide"].column,
+.ui.grid > .row > [class*="seven wide"].column,
+.ui.grid > [class*="seven wide"].column {
   width: fit-content !important;
 }
 
@@ -280,11 +285,18 @@
   width: 30% !important;
   height: 30% !important;
   filter: blur(calc(400px / 5));
-  background-image: linear-gradient(    var(--modra-1),    var(--modra-2),    var(--fialova-1),    var(--fialova-2),    var(--cervena-1),    var(--cervena-2)  );
+  background-image: linear-gradient(
+    var(--modra-1),
+    var(--modra-2),
+    var(--fialova-1),
+    var(--fialova-2),
+    var(--cervena-1),
+    var(--cervena-2)
+  );
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   z-index: -999;
-  position:fixed;
+  position: fixed;
   align-items: center;
   justify-content: center;
   overflow: hidden !important;
@@ -306,7 +318,7 @@
 }
 
 .toast-info {
-  background-color: #780BFF !important;
+  background-color: #780bff !important;
   color: var(--bila) !important;
 }
 
@@ -373,5 +385,5 @@ body {
 }
 
 .ui.button {
-  border-radius: .28571429rem !important;
+  border-radius: 0.28571429rem !important;
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const faker = require('faker');
+const { faker } = require('@faker-js/faker');
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/chat', (req, res) => {
-  let randomName = faker.name.findName();
+  let randomName = faker.person.fullName();
   res.render('chat', { userName: randomName });
 });
 

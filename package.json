@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/wdlsvnit/omeclone#readme",
   "dependencies": {
+    "@faker-js/faker": "^9.2.0",
     "bower": "^1.8.14",
     "ejs": "^3.1.9",
     "express": "^4.16.2",
-    "faker": "^4.1.0",
     "gulp": "^3.9.1",
     "hbs": "^4.0.1",
     "moment": "^2.20.1",
